@@ -32,11 +32,11 @@ npm run preview
 
 このリポジトリは **User Pages** として `YUzushio/YUzushio.github.io` にデプロイします。
 
-1. GitHub で `YUzushio.github.io` リポジトリを作成（未作成の場合）
+1. GitHub で `yuzushio.github.io` リポジトリを作成（未作成の場合）
 2. このリポジトリの remote を設定:
 
    ```bash
-   git remote set-url origin https://github.com/YUzushio/YUzushio.github.io.git
+   git remote set-url origin https://github.com/YUzushio/yuzushio.github.io.git
    ```
 
 3. `main` へ push → GitHub Actions が Pages にデプロイ

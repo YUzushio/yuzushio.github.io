@@ -5,7 +5,7 @@ Gallery SPA は **User Pages** として公開します。
 | 項目 | 値 |
 |------|-----|
 | 新 URL | https://yuzushio.github.io/ |
-| 新リポ | `YUzushio/YUzushio.github.io` |
+| 新リポ | `YUzushio/yuzushio.github.io` |
 | 旧 URL | https://yuzushio.github.io/gallery/ |
 | 旧リポ | `YUzushio/gallery` |
 
