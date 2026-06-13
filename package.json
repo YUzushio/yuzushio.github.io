@@ -9,7 +9,16 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
     "typescript": "~6.0.2",
     "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-masonry-css": "^1.0.16",
+    "react-router-dom": "^7.17.0"
   }
 }
