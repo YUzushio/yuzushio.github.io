@@ -8,8 +8,20 @@ export function extractYouTubeId(url: string): string | null {
   return match?.[1] ?? null
 }
 
+function findParentThumbnail(
+  item: GalleryItem,
+  allItems: GalleryItem[],
+): string | undefined {
+  if (!item.parentId) return undefined
+  const parent = allItems.find((entry) => entry.id === item.parentId)
+  if (!parent) return undefined
+  if (parent.thumbnail) return parent.thumbnail
+  return findParentThumbnail(parent, allItems)
+}
+
 export function resolveThumbnail(
   item: GalleryItem,
+  allItems: GalleryItem[] = [],
   fallbackGenre: GenreId = 'web',
 ): string {
   if (item.thumbnail) {
@@ -25,6 +37,11 @@ export function resolveThumbnail(
 
   if (item.github) {
     return `https://opengraph.githubassets.com/1/${item.github}`
+  }
+
+  const parentThumbnail = findParentThumbnail(item, allItems)
+  if (parentThumbnail) {
+    return parentThumbnail
   }
 
   const genre = item.genres[0] ?? fallbackGenre

@@ -18,8 +18,16 @@ export function FeedView({ data }: FeedViewProps) {
         <h2 id="feed-heading">Feed</h2>
         <p>個別コンテンツを新着順に表示します。</p>
       </div>
-      <MasonryGrid items={items} onItemClick={setSelected} />
-      <PanelModal item={selected} onClose={() => setSelected(null)} />
+      <MasonryGrid
+        items={items}
+        allItems={data.items}
+        onItemClick={setSelected}
+      />
+      <PanelModal
+        item={selected}
+        allItems={data.items}
+        onClose={() => setSelected(null)}
+      />
     </section>
   )
 }

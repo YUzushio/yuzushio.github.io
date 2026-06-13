@@ -6,18 +6,55 @@
     "siteUrl": "https://yuzushio.github.io/"
   },
   "genres": [
-    { "id": "music", "label": "音楽", "icon": "music" },
-    { "id": "game", "label": "ゲーム", "icon": "game" },
-    { "id": "doujin", "label": "技術同人", "icon": "book" },
-    { "id": "web", "label": "Web", "icon": "globe" },
-    { "id": "community", "label": "コミュニティ", "icon": "people" },
-    { "id": "sns", "label": "SNS", "icon": "share" },
-    { "id": "illust", "label": "イラスト / 3D", "icon": "palette" }
+    {
+      "id": "music",
+      "label": "音楽",
+      "icon": "music"
+    },
+    {
+      "id": "game",
+      "label": "ゲーム",
+      "icon": "game"
+    },
+    {
+      "id": "doujin",
+      "label": "技術同人",
+      "icon": "book"
+    },
+    {
+      "id": "web",
+      "label": "Web",
+      "icon": "globe"
+    },
+    {
+      "id": "community",
+      "label": "コミュニティ",
+      "icon": "people"
+    },
+    {
+      "id": "sns",
+      "label": "SNS",
+      "icon": "share"
+    },
+    {
+      "id": "illust",
+      "label": "イラスト / 3D",
+      "icon": "palette"
+    }
   ],
   "categories": [
-    { "id": "sns", "label": "SNS" },
-    { "id": "project", "label": "プロジェクト・コミュニティ" },
-    { "id": "doujinshi", "label": "技術同人誌" }
+    {
+      "id": "sns",
+      "label": "SNS"
+    },
+    {
+      "id": "project",
+      "label": "プロジェクト・コミュニティ"
+    },
+    {
+      "id": "doujinshi",
+      "label": "技術同人誌"
+    }
   ],
   "items": [
     {
@@ -27,10 +64,17 @@
       "summary": "ゲーム実況・東方ギター・オリジナル MV など、Open 公開コンテンツの入口チャンネル。",
       "kind": "hub",
       "category": "sns",
-      "genres": ["sns", "music"],
+      "genres": [
+        "sns",
+        "music"
+      ],
       "url": "https://www.youtube.com/@%E3%82%86%E3%81%9A%E3%81%97%E3%81%8A_yuzshio",
       "showInFeed": false,
-      "tags": ["SNS", "YouTube"]
+      "tags": [
+        "SNS",
+        "YouTube"
+      ],
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-youtube.jpg"
     },
     {
       "id": "yuzshio-x",
@@ -39,10 +83,84 @@
       "summary": "短文発信・告知・交流の Open 公開チャネル。@egaruk",
       "kind": "hub",
       "category": "sns",
-      "genres": ["sns"],
+      "genres": [
+        "sns"
+      ],
       "url": "https://x.com/egaruk",
       "showInFeed": false,
-      "tags": ["SNS", "X"]
+      "tags": [
+        "SNS",
+        "X"
+      ],
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-x.jpg"
+    },
+    {
+      "id": "x-fanart-halee-2019",
+      "slug": "x-fanart-halee-2019",
+      "title": "ハレーさん ファンアート",
+      "summary": "カンヌさん（@sirakannnu）創作シリーズ「彗星おねぇさん」ハレーさんのファンアート。2019年冬コミ前に X 公開。",
+      "kind": "work",
+      "category": "sns",
+      "genres": [
+        "illust",
+        "sns"
+      ],
+      "year": 2019,
+      "publishedAt": "2019-11-10",
+      "url": "https://x.com/egaruk/status/1193427272436350976",
+      "parentId": "yuzshio-x",
+      "thumbnail": "/assets/thumbnails/x/fanart-halee-2019.jpg",
+      "tags": [
+        "X",
+        "ファンアート",
+        "イラスト"
+      ]
+    },
+    {
+      "id": "x-fanart-ruri-dragon-2022",
+      "slug": "x-fanart-ruri-dragon-2022",
+      "title": "ルリドラゴン ファンアート",
+      "summary": "週刊少年ジャンプ「ルリドラゴン」のファンアート。休載中の作者への応援メッセージ付きで X 公開。",
+      "kind": "work",
+      "category": "sns",
+      "genres": [
+        "illust",
+        "sns"
+      ],
+      "year": 2022,
+      "publishedAt": "2022-08-03",
+      "url": "https://x.com/egaruk/status/1554755106465521664",
+      "parentId": "yuzshio-x",
+      "thumbnail": "/assets/thumbnails/x/fanart-ruri-dragon-2022.png",
+      "tags": [
+        "X",
+        "ファンアート",
+        "イラスト",
+        "ルリドラゴン"
+      ]
+    },
+    {
+      "id": "x-fanart-lycoris-recoil-2022",
+      "slug": "x-fanart-lycoris-recoil-2022",
+      "title": "リコリス・リコイル ファンアート",
+      "summary": "アニメ「リコリス・リコイル」3話後、千束へのグレンラガンパロ風ファンアート。X 公開。",
+      "kind": "work",
+      "category": "sns",
+      "genres": [
+        "illust",
+        "sns"
+      ],
+      "year": 2022,
+      "publishedAt": "2022-08-07",
+      "url": "https://x.com/egaruk/status/1556241365717352449",
+      "parentId": "yuzshio-x",
+      "thumbnail": "/assets/thumbnails/x/fanart-lycoris-recoil-2022.jpg",
+      "tags": [
+        "X",
+        "ファンアート",
+        "イラスト",
+        "リコリス・リコイル"
+      ]
     },
     {
       "id": "yuzshio-pixiv",
@@ -51,10 +169,18 @@
       "summary": "イラスト・創作絵の Open 公開チャネル。湯洲潮（user/2209551）",
       "kind": "hub",
       "category": "sns",
-      "genres": ["sns", "illust"],
+      "genres": [
+        "sns",
+        "illust"
+      ],
       "url": "https://www.pixiv.net/users/2209551",
       "showInFeed": false,
-      "tags": ["SNS", "Pixiv", "イラスト"]
+      "tags": [
+        "SNS",
+        "Pixiv",
+        "イラスト"
+      ],
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-pixiv.png"
     },
     {
       "id": "yuzshio-vroidhub",
@@ -63,10 +189,19 @@
       "summary": "VRM 3D キャラクターモデルの公開・配布。代表作: 短髪天子",
       "kind": "hub",
       "category": "sns",
-      "genres": ["sns", "illust"],
+      "genres": [
+        "sns",
+        "illust"
+      ],
       "url": "https://hub.vroid.com/users/2209551",
       "showInFeed": false,
-      "tags": ["SNS", "VRoid", "VRM", "3D"]
+      "tags": [
+        "SNS",
+        "VRoid",
+        "VRM",
+        "3D"
+      ],
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-vroidhub.png"
     },
     {
       "id": "yuzshio-soundcloud",
@@ -75,10 +210,151 @@
       "summary": "ギター演奏・録音の Open 公開チャネル。yukiush",
       "kind": "hub",
       "category": "sns",
-      "genres": ["sns", "music"],
+      "genres": [
+        "sns",
+        "music"
+      ],
       "url": "https://soundcloud.com/yukiush",
       "showInFeed": false,
-      "tags": ["SNS", "SoundCloud", "ギター"]
+      "tags": [
+        "SNS",
+        "SoundCloud",
+        "ギター"
+      ],
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-soundcloud.jpg"
+    },
+    {
+      "id": "sc-la-leggenda-della-luna",
+      "slug": "sc-la-leggenda-della-luna",
+      "title": "Legend of the Moonlight",
+      "summary": "ムーンライト伝説のラテンアレンジ。SoundCloud 公開。",
+      "kind": "work",
+      "category": "sns",
+      "genres": [
+        "music",
+        "sns"
+      ],
+      "url": "https://soundcloud.com/yukiush/la-leggenda-della-luna",
+      "parentId": "yuzshio-soundcloud",
+      "tags": [
+        "SoundCloud",
+        "ギター",
+        "東方Project"
+      ],
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-soundcloud.jpg",
+      "publishedAt": "2016-08-07",
+      "year": 2016
+    },
+    {
+      "id": "sc-legend-of-the-moonlight",
+      "slug": "sc-legend-of-the-moonlight",
+      "title": "La leyenda de la luz de la luna",
+      "summary": "ムーンライト伝説のフラメンコ風アレンジ。SoundCloud 公開。",
+      "kind": "work",
+      "category": "sns",
+      "genres": [
+        "music",
+        "sns"
+      ],
+      "url": "https://soundcloud.com/yukiush/legend-of-the-moonlight",
+      "parentId": "yuzshio-soundcloud",
+      "tags": [
+        "SoundCloud",
+        "ギター",
+        "東方Project"
+      ],
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-soundcloud.jpg",
+      "publishedAt": "2016-08-07",
+      "year": 2016
+    },
+    {
+      "id": "sc-touch-guitar",
+      "slug": "sc-touch-guitar",
+      "title": "Touch",
+      "summary": "タッチのラテンギターアレンジ。SoundCloud 公開。",
+      "kind": "work",
+      "category": "sns",
+      "genres": [
+        "music",
+        "sns"
+      ],
+      "url": "https://soundcloud.com/yukiush/touch-guitar",
+      "parentId": "yuzshio-soundcloud",
+      "tags": [
+        "SoundCloud",
+        "ギター",
+        "東方Project"
+      ],
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-soundcloud.jpg",
+      "publishedAt": "2017-05-27",
+      "year": 2017
+    },
+    {
+      "id": "sc-recorded-1",
+      "slug": "sc-recorded-1",
+      "title": "神々の恋した幻想郷",
+      "summary": "東方Project「神々の恋した幻想郷」ソロギターアレンジ。SoundCloud 公開。",
+      "kind": "work",
+      "category": "sns",
+      "genres": [
+        "music",
+        "sns"
+      ],
+      "url": "https://soundcloud.com/yukiush/recorded-1",
+      "parentId": "yuzshio-soundcloud",
+      "tags": [
+        "SoundCloud",
+        "ギター",
+        "東方Project"
+      ],
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-soundcloud.jpg",
+      "publishedAt": "2017-06-03",
+      "year": 2017
+    },
+    {
+      "id": "sc-recorded",
+      "slug": "sc-recorded",
+      "title": "上海紅茶館",
+      "summary": "東方Project「上海紅茶館」ソロギターアレンジ。SoundCloud 公開。",
+      "kind": "work",
+      "category": "sns",
+      "genres": [
+        "music",
+        "sns"
+      ],
+      "url": "https://soundcloud.com/yukiush/recorded",
+      "parentId": "yuzshio-soundcloud",
+      "tags": [
+        "SoundCloud",
+        "ギター",
+        "東方Project"
+      ],
+      "thumbnail": "/assets/thumbnails/soundcloud/sc-recorded.jpg",
+      "publishedAt": "2017-06-03",
+      "year": 2017
+    },
+    {
+      "id": "sc-sou-ten-kou-ro",
+      "slug": "sc-sou-ten-kou-ro",
+      "title": "蒼天紅路",
+      "summary": "キツネイロさん「天辺二至ル」へのインスピレーションで作曲した人生初の作品。東方緋想天の影響を受けたオリジナル曲。",
+      "kind": "work",
+      "category": "sns",
+      "genres": [
+        "music",
+        "sns"
+      ],
+      "url": "https://soundcloud.com/yukiush/lbaxk3mj5lpm",
+      "parentId": "yuzshio-soundcloud",
+      "tags": [
+        "SoundCloud",
+        "作曲",
+        "東方Project",
+        "オリジナル"
+      ],
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-soundcloud.jpg",
+      "publishedAt": "2016-12-08",
+      "year": 2016
     },
     {
       "id": "yuzshio-note",
@@ -87,10 +363,16 @@
       "summary": "長文・制作記・コミュニティ紹介の Open 公開チャネル。@yuzusio",
       "kind": "hub",
       "category": "sns",
-      "genres": ["sns"],
+      "genres": [
+        "sns"
+      ],
       "url": "https://note.com/yuzusio",
       "showInFeed": false,
-      "tags": ["SNS", "note"]
+      "tags": [
+        "SNS",
+        "note"
+      ],
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-note.jpg"
     },
     {
       "id": "touhou-hisouten-guitar-play",
@@ -99,12 +381,19 @@
       "summary": "東方緋想天をソロギターで弾いてみた演奏動画（2013）。",
       "kind": "work",
       "category": "sns",
-      "genres": ["music", "sns"],
+      "genres": [
+        "music",
+        "sns"
+      ],
       "year": 2013,
       "publishedAt": "2013-08-06",
       "youtube": "https://www.youtube.com/watch?v=VuUSCTe4_E8",
       "parentId": "yuzshio-youtube",
-      "tags": ["東方Project", "ギター", "演奏"]
+      "tags": [
+        "東方Project",
+        "ギター",
+        "演奏"
+      ]
     },
     {
       "id": "touhou-saigyoku-guitar-tab",
@@ -113,12 +402,19 @@
       "summary": "東方緋想天「砕月」のソロギター TAB 譜付き動画（2016）。",
       "kind": "work",
       "category": "sns",
-      "genres": ["music", "sns"],
+      "genres": [
+        "music",
+        "sns"
+      ],
       "year": 2016,
       "publishedAt": "2016-08-12",
       "youtube": "https://www.youtube.com/watch?v=KUlHiICm7ZQ",
       "parentId": "yuzshio-youtube",
-      "tags": ["東方Project", "ギター", "TAB"]
+      "tags": [
+        "東方Project",
+        "ギター",
+        "TAB"
+      ]
     },
     {
       "id": "elden-ring-musashi-play",
@@ -127,12 +423,18 @@
       "summary": "ELDEN RING を宮本武蔵・二天一流コンセプトの縛りで本編＋DLC 攻略（2024）。",
       "kind": "work",
       "category": "sns",
-      "genres": ["game", "sns"],
+      "genres": [
+        "game",
+        "sns"
+      ],
       "year": 2024,
       "publishedAt": "2024-12-14",
       "youtube": "https://www.youtube.com/watch?v=bLQuJzESZtA",
       "parentId": "yuzshio-youtube",
-      "tags": ["ELDENRING", "ゲーム実況"]
+      "tags": [
+        "ELDENRING",
+        "ゲーム実況"
+      ]
     },
     {
       "id": "original-mv-sabishii",
@@ -141,12 +443,19 @@
       "summary": "14年温めた曲を AI ツールと協働して形にしたオリジナル MV（2026）。",
       "kind": "work",
       "category": "sns",
-      "genres": ["music", "sns"],
+      "genres": [
+        "music",
+        "sns"
+      ],
       "year": 2026,
       "publishedAt": "2026-06-10",
       "youtube": "https://www.youtube.com/watch?v=ONlfgk544VE",
       "parentId": "yuzshio-youtube",
-      "tags": ["オリジナル曲", "MV", "AI制作"]
+      "tags": [
+        "オリジナル曲",
+        "MV",
+        "AI制作"
+      ]
     },
     {
       "id": "ov2l",
@@ -155,22 +464,39 @@
       "summary": "音声合成 Deep Learning 研究者の Discord コミュニティ（2018〜）。Irisia Project の母体。",
       "kind": "work",
       "category": "project",
-      "genres": ["community"],
+      "genres": [
+        "community"
+      ],
       "year": 2018,
       "site": "https://www.youtube.com/@ov2l150",
       "url": "https://discord.com/channels/766257051806203955",
-      "tags": ["音声合成", "Discord", "コミュニティ"]
+      "thumbnail": "/assets/thumbnails/ov2l.png",
+      "tags": [
+        "音声合成",
+        "Discord",
+        "コミュニティ"
+      ]
     },
     {
-      "id": "2dml",
-      "slug": "2dml",
-      "title": "2DML",
-      "summary": "生成 AI を二次創作等に活用することを研究する Discord コミュニティ。",
+      "id": "2dml-lt-2022",
+      "slug": "2dml-lt-2022",
+      "title": "お絵描きAIと表情変化AIで技術本の会話パートを作る",
+      "summary": "第2回創作＋機械学習 LT 会（2022/11/05）に参加して登壇。お絵描き AI と表情差分 AI で技術書の会話パートを作る試み。",
       "kind": "work",
       "category": "project",
-      "genres": ["community"],
-      "url": "https://discord.com/channels/487250126235107340",
-      "tags": ["生成AI", "二次創作", "Discord"]
+      "genres": [
+        "doujin"
+      ],
+      "year": 2022,
+      "publishedAt": "2022-11-05",
+      "url": "https://docs.google.com/presentation/d/1lTC82oW2CfEig-V7RpiTlf_oQ4Z0zXNRD7cPc3vP-FQ/edit?usp=sharing",
+      "site": "https://connpass.com/event/262846/",
+      "thumbnail": "/assets/thumbnails/2dml-lt-2022.png",
+      "tags": [
+        "LT",
+        "生成AI",
+        "技術同人"
+      ]
     },
     {
       "id": "ui-builder-intro",
@@ -179,10 +505,18 @@
       "summary": "Node-RED と Vue.js を組み合わせる UI Builder の技術同人誌（技術書典 応援祭 2020）。",
       "kind": "work",
       "category": "doujinshi",
-      "genres": ["doujin", "web"],
+      "genres": [
+        "doujin",
+        "web"
+      ],
       "year": 2020,
       "publishedAt": "2020-03-07",
-      "tags": ["Node-RED", "Vue.js", "技術書典"]
+      "thumbnail": "/assets/thumbnails/ui-builder-intro.png",
+      "tags": [
+        "Node-RED",
+        "Vue.js",
+        "技術書典"
+      ]
     },
     {
       "id": "mai-akina-se-walkthrough",
@@ -191,11 +525,17 @@
       "summary": "表情豊かなキャラ同士の会話で SE 学習を案内する技術同人誌（技術書典15・2023）。",
       "kind": "work",
       "category": "doujinshi",
-      "genres": ["doujin"],
+      "genres": [
+        "doujin"
+      ],
       "year": 2023,
       "publishedAt": "2023-05-20",
       "booth": "https://booth.pm/ja/items/4788395",
-      "tags": ["技術書典", "SE"]
+      "thumbnail": "/assets/thumbnails/mai-akina-se-walkthrough.png",
+      "tags": [
+        "技術書典",
+        "SE"
+      ]
     },
     {
       "id": "zenhub-agile-pm",
@@ -204,25 +544,39 @@
       "summary": "ZenHub を使ったアジャイル PM の実践ガイド（技術書典16・2023）。",
       "kind": "work",
       "category": "doujinshi",
-      "genres": ["doujin"],
+      "genres": [
+        "doujin"
+      ],
       "year": 2023,
       "publishedAt": "2023-11-12",
       "techbookfest": "https://techbookfest.org/product/bsBABRKnLTqBZyLLWL7cVr?productVariantID=aiMRbvH7SGzMjqnKWeQYBM",
-      "tags": ["ZenHub", "アジャイル", "技術書典"]
+      "thumbnail": "/assets/thumbnails/zenhub-agile-pm.png",
+      "tags": [
+        "ZenHub",
+        "アジャイル",
+        "技術書典"
+      ]
     },
     {
       "id": "irisia-project",
       "slug": "irisia-project",
       "title": "Irisia Project",
-      "summary": "複数感情音声オープンデータセット。React + AWS Amplify で公開（2022）。",
+      "summary": "2022年当時、世界初となる複数感情音声オープンデータセットを有志とともに作成",
       "kind": "work",
       "category": "project",
-      "genres": ["web", "community"],
+      "genres": [
+        "web",
+        "community"
+      ],
       "year": 2022,
-      "publishedAt": "2022-01-01",
       "github": "YUzushio/irisia_project_web",
       "site": "https://www.irisiaproject.com",
-      "tags": ["React", "AWS Amplify", "オープンデータ"]
+      "thumbnail": "/assets/thumbnails/irisia-project.png",
+      "tags": [
+        "React",
+        "AWS Amplify",
+        "オープンデータ"
+      ]
     },
     {
       "id": "yamataikoku-report-web",
@@ -231,10 +585,37 @@
       "summary": "邪馬台国研究の現状を可視化する研究情報ポータル（開発中）。",
       "kind": "work",
       "category": "project",
-      "genres": ["web"],
+      "genres": [
+        "web"
+      ],
       "year": 2026,
       "github": "YUzushio/yamataikoku_report_web",
-      "tags": ["React", "Chart.js", "研究"]
+      "tags": [
+        "React",
+        "Chart.js",
+        "研究"
+      ]
+    },
+    {
+      "id": "axcellworks",
+      "slug": "axcellworks",
+      "title": "株式会社 AxcellWorks",
+      "summary": "2023年設立。法人と公式サイト（axcellworks.com）。副業・業務委託・自社プロダクトの運用基盤。Flutter Web + AWS Amplify。",
+      "kind": "work",
+      "category": "project",
+      "genres": [
+        "web"
+      ],
+      "year": 2023,
+      "site": "https://www.axcellworks.com",
+      "url": "https://www.axcellworks.com",
+      "github": "YUzushio/axcellworks",
+      "thumbnail": "/assets/thumbnails/axcellworks.png",
+      "tags": [
+        "Flutter",
+        "AWS Amplify",
+        "会社"
+      ]
     }
   ]
 }

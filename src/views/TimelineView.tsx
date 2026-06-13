@@ -22,11 +22,19 @@ export function TimelineView({ data }: TimelineViewProps) {
       {[...grouped.entries()].map(([year, items]) => (
         <section key={year} className="timeline-section">
           <h3 className="timeline-section__year">{year}</h3>
-          <MasonryGrid items={items} onItemClick={setSelected} />
+          <MasonryGrid
+            items={items}
+            allItems={data.items}
+            onItemClick={setSelected}
+          />
         </section>
       ))}
 
-      <PanelModal item={selected} onClose={() => setSelected(null)} />
+      <PanelModal
+        item={selected}
+        allItems={data.items}
+        onClose={() => setSelected(null)}
+      />
     </section>
   )
 }

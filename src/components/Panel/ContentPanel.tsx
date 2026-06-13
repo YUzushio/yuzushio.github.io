@@ -3,12 +3,18 @@ import { resolveThumbnail } from '../../utils/thumbnail'
 
 interface ContentPanelProps {
   item: GalleryItem
+  allItems?: GalleryItem[]
   onClick: (item: GalleryItem) => void
   compact?: boolean
 }
 
-export function ContentPanel({ item, onClick, compact = false }: ContentPanelProps) {
-  const thumbnail = resolveThumbnail(item)
+export function ContentPanel({
+  item,
+  allItems = [],
+  onClick,
+  compact = false,
+}: ContentPanelProps) {
+  const thumbnail = resolveThumbnail(item, allItems)
 
   return (
     <button

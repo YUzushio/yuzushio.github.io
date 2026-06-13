@@ -90,6 +90,27 @@ npm run preview
 node scripts/export-from-vault.mjs > public/data/gallery.draft.json
 ```
 
+## SNS チャンネルアイコン（YouTube / SoundCloud）
+
+YouTube チャンネル・SoundCloud / X / Pixiv / note / VRoid Hub プロフィールの `url` を持つ item は、ビルド前スクリプトでアイコンを取得します。
+
+```bash
+npm run resolve:sns-avatars
+# 既存サムネも再取得する場合
+node scripts/resolve-sns-avatars.mjs --force
+```
+
+| プラットフォーム | 取得方法 |
+|------------------|----------|
+| YouTube | チャンネルページのアバター URL |
+| SoundCloud | oEmbed `thumbnail_url` |
+| X (Twitter) | `og:image`（プロフィール画像） |
+| Pixiv | `og:image` |
+| note | `og:image` |
+| VRoid Hub | `og:image`（403 時は同一 ID の Pixiv アイコン） |
+
+取得した画像は `public/assets/thumbnails/sns/` に保存され、`gallery.json` の `thumbnail` に反映されます。`npm run build` 時も自動実行されます。
+
 ## Related
 
 - [Atelier Vault](../Atelier-Vault) — private Obsidian wiki (`Backroom`)

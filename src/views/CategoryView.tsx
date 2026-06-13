@@ -28,12 +28,20 @@ export function CategoryView({ data }: CategoryViewProps) {
             <h3 className="category-section__title">
               {labels.get(categoryId) ?? categoryId}
             </h3>
-            <MasonryGrid items={items} onItemClick={setSelected} />
+            <MasonryGrid
+              items={items}
+              allItems={data.items}
+              onItemClick={setSelected}
+            />
           </section>
         )
       })}
 
-      <PanelModal item={selected} onClose={() => setSelected(null)} />
+      <PanelModal
+        item={selected}
+        allItems={data.items}
+        onClose={() => setSelected(null)}
+      />
     </section>
   )
 }

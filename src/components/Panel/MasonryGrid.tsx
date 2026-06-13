@@ -4,6 +4,7 @@ import { ContentPanel } from './ContentPanel'
 
 interface MasonryGridProps {
   items: GalleryItem[]
+  allItems?: GalleryItem[]
   onItemClick: (item: GalleryItem) => void
   compact?: boolean
 }
@@ -15,7 +16,12 @@ const breakpointColumns = {
   480: 1,
 }
 
-export function MasonryGrid({ items, onItemClick, compact = false }: MasonryGridProps) {
+export function MasonryGrid({
+  items,
+  allItems = [],
+  onItemClick,
+  compact = false,
+}: MasonryGridProps) {
   if (items.length === 0) {
     return <p className="empty-state">該当するコンテンツがありません。</p>
   }
@@ -30,6 +36,7 @@ export function MasonryGrid({ items, onItemClick, compact = false }: MasonryGrid
         <ContentPanel
           key={item.id}
           item={item}
+          allItems={allItems}
           onClick={onItemClick}
           compact={compact}
         />

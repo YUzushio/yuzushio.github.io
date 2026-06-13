@@ -56,7 +56,9 @@ export function itemsByCategory(
     map.set(categoryId, [])
   }
 
-  for (const item of items.filter((entry) => entry.kind === 'work')) {
+  for (const item of items.filter(
+    (entry) => entry.kind === 'work' || entry.kind === 'hub',
+  )) {
     const bucket = map.get(item.category) ?? []
     bucket.push(item)
     map.set(item.category, bucket)
@@ -64,6 +66,8 @@ export function itemsByCategory(
 
   for (const bucket of map.values()) {
     bucket.sort((a, b) => {
+      if (a.kind === 'hub' && b.kind !== 'hub') return -1
+      if (a.kind !== 'hub' && b.kind === 'hub') return 1
       const dateA = a.publishedAt ?? `${a.year ?? 0}-01-01`
       const dateB = b.publishedAt ?? `${b.year ?? 0}-01-01`
       return dateB.localeCompare(dateA)

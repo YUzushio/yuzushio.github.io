@@ -4,6 +4,7 @@ import { primaryLink, resolveThumbnail } from '../../utils/thumbnail'
 
 interface PanelModalProps {
   item: GalleryItem | null
+  allItems?: GalleryItem[]
   onClose: () => void
   title?: string
   subtitle?: string
@@ -12,6 +13,7 @@ interface PanelModalProps {
 
 export function PanelModal({
   item,
+  allItems = [],
   onClose,
   title,
   subtitle,
@@ -36,7 +38,7 @@ export function PanelModal({
   if (!item && !children) return null
 
   const link = item ? primaryLink(item) : undefined
-  const thumbnail = item ? resolveThumbnail(item) : undefined
+  const thumbnail = item ? resolveThumbnail(item, allItems) : undefined
 
   return (
     <div

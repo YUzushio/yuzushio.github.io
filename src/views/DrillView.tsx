@@ -48,6 +48,7 @@ export function DrillView({ data }: DrillViewProps) {
         >
           <MasonryGrid
             items={genreItems}
+            allItems={data.items}
             compact
             onItemClick={(item) => setSelected(item)}
           />
@@ -56,6 +57,7 @@ export function DrillView({ data }: DrillViewProps) {
 
       <PanelModal
         item={selected}
+        allItems={data.items}
         onClose={() => setSelected(null)}
       />
     </section>

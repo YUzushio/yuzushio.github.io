@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/resolve-sns-avatars.mjs",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "resolve:sns-avatars": "node scripts/resolve-sns-avatars.mjs"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
