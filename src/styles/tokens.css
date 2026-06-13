@@ -1,0 +1,17 @@
+:root {
+  --color-bg-deep: #1a231c;
+  --color-bg: #243028;
+  --color-surface: #2f3d32;
+  --color-surface-hover: #36483a;
+  --color-border: #3d4f40;
+  --color-text: #e4ebe0;
+  --color-text-muted: #9aab96;
+  --color-accent: #6b8264;
+  --color-accent-hover: #849d7c;
+  --color-overlay: rgba(18, 24, 20, 0.72);
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --shadow-panel: 0 12px 32px rgba(0, 0, 0, 0.22);
+  --font-sans: 'Segoe UI', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+}
