@@ -44,7 +44,7 @@ export default function App() {
       <footer className="site-footer">
         <p>
           Open content hub · fork-friendly JSON ·{' '}
-          <a href="https://github.com/YUzushio/YUzushio.github.io">GitHub</a>
+          <a href="https://github.com/YUzushio/yuzushio.github.io">GitHub</a>
         </p>
       </footer>
     </div>
