@@ -1,5 +1,7 @@
 # YUzushio Gallery
 
+**日本語** · [English (README.en.md)](README.en.md)
+
 Open コンテンツ・制作・実績を並べる **React SPA ポートフォリオ**です。  
 **中身は JSON と画像だけ** — UI は fork したまま差し替え可能です。
 
@@ -115,12 +117,12 @@ SNS hub（kind: hub, showInFeed: false）
 | [`gallery-content`](.cursor/skills/gallery-content/SKILL.md) | **Gallery 単体** — `gallery.json` / サムネ / 4 ビュー |
 | [`gallery-vault-receiver`](.cursor/skills/gallery-vault-receiver/SKILL.md) | **Vault → Gallery 受信** — Wiki から JSON へマージ・ビルド |
 
-Vault 側（送信）: `Atelier-Vault/.cursor/skills/gallery-vault-sender/SKILL.md`
+Vault 側（送信）: [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) の `gallery-vault-sender` skill
 
 ### Vault を先に作ってから Gallery へ載せる
 
 ```
-1. [Atelier-Vault] @gallery-vault-sender
+1. [my-atelier-vault] @gallery-vault-sender
       Backroom/{slug}/_index.md  … gallery: true, frontmatter, Gallery 掲載表
 
 2. [gallery] @gallery-vault-receiver
@@ -258,7 +260,7 @@ npm run resolve:sns-avatars -- --force   # 既存も再取得
 
 ## Optional: Obsidian Vault から下書き export
 
-ローカルに [Atelier-Vault](https://github.com/YUzushio/atelier-vault) がある場合:
+ローカルに [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) がある場合:
 
 1. Vault 側: `@gallery-vault-sender` で `Backroom/{slug}/` を整備（`gallery: true`）
 2. Gallery 側: `@gallery-vault-receiver` で `gallery.json` にマージ
@@ -277,5 +279,5 @@ node scripts/export-from-vault.mjs > public/data/gallery.draft.json
 
 - [gallery-content](.cursor/skills/gallery-content/SKILL.md) — Gallery 単体編集
 - [gallery-vault-receiver](.cursor/skills/gallery-vault-receiver/SKILL.md) — Vault から取り込み
-- Vault sender: `Atelier-Vault/.cursor/skills/gallery-vault-sender/SKILL.md`
-- [Atelier Vault](https://github.com/YUzushio/atelier-vault) — Obsidian wiki（任意）
+- Vault sender: [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) · `gallery-vault-sender` skill
+- [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) — Obsidian Wiki テンプレ（任意）
