@@ -16,6 +16,8 @@ Sender ドキュメントと同一の対応表（receiver 作業用）。
 | 推論 | `kind`, `category`, `genres` |
 | 親 hub の id | 子の `parentId` |
 
+`visibility` は `open/private/closed` を許容。Gallery 取り込み可否は `gallery: true` を基準に判定する。
+
 ## `## Gallery 掲載` 表
 
 | 列 | Gallery |
