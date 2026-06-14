@@ -597,6 +597,29 @@
       ]
     },
     {
+      "id": "atelier-open-toolkit",
+      "slug": "atelier-open-toolkit",
+      "title": "AIエージェント全盛時代の趣味ワーク管理とポートフォリオ運営の最適解",
+      "summary": "my-atelier-vault（Obsidian Wiki）と Gallery（GitHub Pages SPA）の OSS テンプレ公開記事。Qiita · ZENN に掲載。",
+      "kind": "work",
+      "category": "project",
+      "genres": [
+        "web"
+      ],
+      "year": 2026,
+      "publishedAt": "2026-06-14",
+      "url": "https://qiita.com/egaruk/items/06aaccbc671930604fb7",
+      "site": "https://zenn.dev/yuzushio1229/articles/7f4abfc237c1a6",
+      "github": "YUzushio/my-atelier-vault",
+      "tags": [
+        "Obsidian",
+        "GitHub Pages",
+        "OSS",
+        "Cursor",
+        "ポートフォリオ"
+      ]
+    },
+    {
       "id": "axcellworks",
       "slug": "axcellworks",
       "title": "株式会社 AxcellWorks",
