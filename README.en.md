@@ -8,6 +8,29 @@ A **React SPA portfolio** for open content, creative work, and achievements.
 - **Live example:** https://yuzushio.github.io/
 - **Content source of truth:** [`public/data/gallery.json`](public/data/gallery.json)
 
+## Publish free on `{user}.github.io` — no server needed
+
+This template targets **[GitHub Pages](https://pages.github.com/)**.  
+You can host your portfolio **without renting a VPS or shared server** — just push to a GitHub repository.
+
+| Point | Details |
+|-------|---------|
+| **Cost** | **Free** for public repos ([GitHub Free plan](https://github.com/pricing)) |
+| **Ops** | No server setup, patching, or uptime babysitting — **git push deploys** |
+| **URL** | `{github-username}.github.io` becomes your live site |
+| **HTTPS** | Enabled by default |
+| **Custom domain** | Optional (e.g. `portfolio.example.com`) |
+
+Fork → rename → edit `gallery.json` → push — that’s enough to launch your Gallery.
+
+**Learn more (GitHub Docs)**
+
+- [About GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
+- [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+- [User Pages vs Project Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites)
+- [Custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
+- [Publishing with GitHub Actions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow) (this repo uses Actions)
+
 ---
 
 ## Getting started
