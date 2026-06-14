@@ -79,9 +79,16 @@ git push -u origin main
 - `vite.config.ts` の `base: '/'` を `base: '/{repo-name}/'` に変更
 - `gallery.json` の `meta.siteUrl` も `https://{user}.github.io/{repo-name}/` に合わせる
 
+**clone 後（A / B 共通）:** `@gallery-setup` または `node .cursor/skills/gallery-setup/scripts/setup.mjs` で meta · ビルド · デプロイ手順を案内
+
 ### 2. サイト情報を自分用に変える
 
-[`public/data/gallery.json`](public/data/gallery.json) の `meta` を編集します。
+[`public/data/gallery.json`](public/data/gallery.json) の `meta` を編集します。  
+**fork 直後は `@gallery-setup`（推奨）** か下記スクリプトで一括設定できます:
+
+```bash
+node .cursor/skills/gallery-setup/scripts/setup.mjs
+```
 
 ```json
 {
@@ -174,6 +181,7 @@ SNS hub（kind: hub, showInFeed: false）
 
 | Skill | 役割 |
 |-------|------|
+| [`gallery-setup`](.cursor/skills/gallery-setup/SKILL.md) | **fork 直後** — meta · Pages 設定 · ビルド · デプロイ手順 |
 | [`gallery-content`](.cursor/skills/gallery-content/SKILL.md) | **Gallery 単体** — `gallery.json` / サムネ / 4 ビュー |
 | [`gallery-vault-receiver`](.cursor/skills/gallery-vault-receiver/SKILL.md) | **Vault → Gallery 受信** — Wiki から JSON へマージ・ビルド |
 
@@ -196,6 +204,7 @@ Vault 側（送信）: [my-atelier-vault](https://github.com/YUzushio/my-atelier
 1. Vault リポまたは gallery リポを Cursor で開く（両方 sibling なら同じウィンドウでも可）
 2. 例:
 
+   > `@gallery-setup` fork したので公開までセットアップして  
    > `@gallery-vault-sender` 新プロジェクト foo を Backroom に作って Gallery 用に整えて  
    > `@gallery-vault-receiver` Backroom の foo を gallery.json に反映して
 
@@ -209,6 +218,7 @@ fork 時は `.cursor/skills/` ごと渡ります。
 
 ```
 .cursor/skills/
+├── gallery-setup/             … fork 直後の初回セットアップ
 ├── gallery-content/           … Gallery 正本の編集
 └── gallery-vault-receiver/    … Wiki からの取り込み
 ```

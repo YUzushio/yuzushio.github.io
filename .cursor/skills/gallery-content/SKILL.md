@@ -4,8 +4,9 @@ description: >-
   Maintains Gallery SPA content (public/data/gallery.json, thumbnails, parent
   hubs, Timeline dates) and explains how JSON maps to Feed/Drill/Timeline/Category
   views. Use when adding or editing gallery items, SNS or SoundCloud panels, fan
-  art tweets, fork setup, thumbnail resolution, or when the user mentions Gallery
-  content, gallery.json, or portfolio panels.
+  art tweets, fork setup (@gallery-setup), thumbnail resolution, or when the user
+  mentions Gallery content, gallery.json, portfolio panels, or @gallery-setup
+  for deploy prep only.
 ---
 
 # Gallery Content

@@ -79,9 +79,16 @@ git push -u origin main
 - Change `vite.config.ts` `base: '/'` to `base: '/{repo-name}/'`
 - Set `gallery.json` `meta.siteUrl` to `https://{user}.github.io/{repo-name}/`
 
+**After clone (A or B):** run `@gallery-setup` or `node .cursor/skills/gallery-setup/scripts/setup.mjs` for meta, build, and deploy steps.
+
 ### 2. Customize site metadata
 
-Edit `meta` in [`public/data/gallery.json`](public/data/gallery.json):
+Edit `meta` in [`public/data/gallery.json`](public/data/gallery.json).  
+**After a fork, use `@gallery-setup` (recommended)** or:
+
+```bash
+node .cursor/skills/gallery-setup/scripts/setup.mjs
+```
 
 ```json
 {
@@ -174,6 +181,7 @@ SNS hub (kind: hub, showInFeed: false)
 
 | Skill | Role |
 |-------|------|
+| [`gallery-setup`](.cursor/skills/gallery-setup/SKILL.md) | **After fork** — meta · Pages config · build · deploy checklist |
 | [`gallery-content`](.cursor/skills/gallery-content/SKILL.md) | **Gallery only** — `gallery.json` / thumbnails / 4 views |
 | [`gallery-vault-receiver`](.cursor/skills/gallery-vault-receiver/SKILL.md) | **Vault → Gallery receive** — merge Wiki into JSON · build |
 
@@ -196,6 +204,7 @@ Vault side (sender): [my-atelier-vault/.cursor/skills/gallery-vault-sender/SKILL
 1. Open the Vault repo or gallery repo in Cursor (sibling folders in one window works too)
 2. Examples:
 
+   > `@gallery-setup` I forked this — walk me through publish setup  
    > `@gallery-vault-sender` Create new project foo in Backroom and prepare it for Gallery  
    > `@gallery-vault-receiver` Sync Backroom foo into gallery.json
 
@@ -209,6 +218,7 @@ Skills under `.cursor/skills/` are included when you fork.
 
 ```
 .cursor/skills/
+├── gallery-setup/             … first-time fork setup
 ├── gallery-content/           … edit Gallery source
 └── gallery-vault-receiver/    … import from Wiki
 ```
