@@ -65,11 +65,11 @@ npm run build
          GitHub Pages
 ```
 
-## ローカルパス（YUzushio）
+## ローカルパス例（sibling clone）
 
-| リポ | パス |
-|------|------|
-| Vault | `C:/Users/byrwg/Atelier-Vault` |
-| Gallery | `C:/Users/byrwg/gallery` |
+| リポ | パス例 |
+|------|--------|
+| Vault | `../my-atelier-vault` — [YUzushio/my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) |
+| Gallery | `../gallery`（このリポ） |
 
-export スクリプトは `gallery/scripts/export-from-vault.mjs` から `../../Atelier-Vault/Backroom` を参照。
+export スクリプトは `gallery/scripts/export-from-vault.mjs` から `../../my-atelier-vault/Backroom` を参照。

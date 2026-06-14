@@ -260,7 +260,7 @@ Also runs automatically in `prebuild` before `npm run build`.
 
 ## Optional: draft export from Obsidian Vault
 
-If you have [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) locally:
+If you have [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) ([fork](https://github.com/YUzushio/my-atelier-vault/fork)) cloned as a sibling folder locally:
 
 1. Vault: `@gallery-vault-sender` — prepare `Backroom/{slug}/` (`gallery: true`)
 2. Gallery: `@gallery-vault-receiver` — merge into `gallery.json`

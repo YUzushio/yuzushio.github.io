@@ -1,7 +1,7 @@
 ---
 name: gallery-vault-receiver
 description: >-
-  Imports Atelier-Vault Backroom gallery: true notes into public/data/gallery.json,
+  Imports my-atelier-vault Backroom gallery: true notes into public/data/gallery.json,
   copies wiki assets to thumbnails, and runs build. Use after vault sender prep,
   when syncing wiki to Gallery, merging export-from-vault draft, or when the user
   says Vault to Gallery, receive from wiki, or update gallery from Backroom.
@@ -15,7 +15,7 @@ Gallery リポジトリの **受信側**。Vault で整えたメタを `gallery.
 
 ## 前提
 
-- Vault: `../Atelier-Vault/Backroom/`（または `C:/Users/byrwg/Atelier-Vault/Backroom/`）
+- Vault: `../my-atelier-vault/Backroom/`（[公開テンプレ](https://github.com/YUzushio/my-atelier-vault) を sibling に clone した場合）
 - Gallery: このリポジトリ root
 - Sender 側で `gallery: true` と `_index.md` が用意済み
 - Vault 側 taxonomy は `visibility: open/private/closed`（`closed` は終了）
@@ -95,7 +95,7 @@ Gallery 掲載表・TODO を `Backroom/{slug}/_index.md` に追記（sender と�
 ## 関連 Skill
 
 - 日常の JSON 編集: [gallery-content/SKILL.md](../gallery-content/SKILL.md)
-- Vault 側準備: `Atelier-Vault/.cursor/skills/gallery-vault-sender/SKILL.md`
+- Vault 側準備: [my-atelier-vault · gallery-vault-sender](https://github.com/YUzushio/my-atelier-vault/blob/main/.cursor/skills/gallery-vault-sender/SKILL.md)
 
 ## 参照
 

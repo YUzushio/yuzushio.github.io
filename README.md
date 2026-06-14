@@ -260,7 +260,7 @@ npm run resolve:sns-avatars -- --force   # 既存も再取得
 
 ## Optional: Obsidian Vault から下書き export
 
-ローカルに [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) がある場合:
+ローカルに [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault)（[fork](https://github.com/YUzushio/my-atelier-vault/fork)）を sibling に clone している場合:
 
 1. Vault 側: `@gallery-vault-sender` で `Backroom/{slug}/` を整備（`gallery: true`）
 2. Gallery 側: `@gallery-vault-receiver` で `gallery.json` にマージ

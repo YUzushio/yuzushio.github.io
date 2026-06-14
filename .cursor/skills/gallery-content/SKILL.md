@@ -88,7 +88,7 @@ Check: Feed order, Timeline year bucket, Category section, Drill genre modal, pa
 
 ## Optional: Obsidian Vault
 
-If `Atelier-Vault/Backroom/{slug}/_index.md` has `gallery: true` in frontmatter:
+If [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) `Backroom/{slug}/_index.md` has `gallery: true` in frontmatter:
 
 ```bash
 node scripts/export-from-vault.mjs > public/data/gallery.draft.json
@@ -98,9 +98,9 @@ Merge draft into `gallery.json` manually; export is hints only (incomplete schem
 
 ## Wiki sync (YUzushio)
 
-When user also keeps Atelier-Vault: update matching `Backroom/*/ _index.md` (Gallery table, `gallery: true`, dates). Gallery JSON remains the **deploy source of truth**.
+When user also keeps [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault): update matching `Backroom/*/ _index.md` (Gallery table, `gallery: true`, dates). Gallery JSON remains the **deploy source of truth**.
 
-**Vault-first workflow:** use `@gallery-vault-sender` in Atelier-Vault, then `@gallery-vault-receiver` in this repo. See [gallery-vault-receiver/SKILL.md](../gallery-vault-receiver/SKILL.md).
+**Vault-first workflow:** use `@gallery-vault-sender` in my-atelier-vault, then `@gallery-vault-receiver` in this repo. See [gallery-vault-receiver/SKILL.md](../gallery-vault-receiver/SKILL.md).
 
 ## Don't
 

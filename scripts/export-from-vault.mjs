@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Optional local tool: reads Atelier-Vault Backroom frontmatter and prints
+ * Optional local tool: reads my-atelier-vault Backroom frontmatter and prints
  * a draft gallery.json to stdout. Run from gallery repo root:
  *
  *   node scripts/export-from-vault.mjs > public/data/gallery.draft.json
@@ -11,7 +11,7 @@ import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const vaultRoot = join(__dirname, '..', '..', 'Atelier-Vault', 'Backroom')
+const vaultRoot = join(__dirname, '..', '..', 'my-atelier-vault', 'Backroom')
 
 function parseFrontmatter(content) {
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/)
