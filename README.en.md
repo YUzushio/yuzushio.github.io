@@ -279,5 +279,4 @@ Output is **incomplete** (no `kind` / child panels / thumbnails). Use the receiv
 
 - [gallery-content](.cursor/skills/gallery-content/SKILL.md) — Gallery-only editing
 - [gallery-vault-receiver](.cursor/skills/gallery-vault-receiver/SKILL.md) — import from Vault
-- Vault sender: [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) · `gallery-vault-sender` skill
-- [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) — Obsidian Wiki template (optional)
+- [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) ([fork](https://github.com/YUzushio/my-atelier-vault/fork)) — Obsidian Wiki template (optional) · [`gallery-vault-sender`](https://github.com/YUzushio/my-atelier-vault/blob/main/.cursor/skills/gallery-vault-sender/SKILL.md)

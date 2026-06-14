@@ -279,5 +279,4 @@ node scripts/export-from-vault.mjs > public/data/gallery.draft.json
 
 - [gallery-content](.cursor/skills/gallery-content/SKILL.md) — Gallery 単体編集
 - [gallery-vault-receiver](.cursor/skills/gallery-vault-receiver/SKILL.md) — Vault から取り込み
-- Vault sender: [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) · `gallery-vault-sender` skill
-- [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) — Obsidian Wiki テンプレ（任意）
+- [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault)（[fork](https://github.com/YUzushio/my-atelier-vault/fork)）— Obsidian Wiki テンプレ（任意）· [`gallery-vault-sender`](https://github.com/YUzushio/my-atelier-vault/blob/main/.cursor/skills/gallery-vault-sender/SKILL.md)

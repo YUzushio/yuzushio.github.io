@@ -73,3 +73,8 @@ npm run build
 | Gallery | `../gallery`（このリポ） |
 
 export スクリプトは `gallery/scripts/export-from-vault.mjs` から `../../my-atelier-vault/Backroom` を参照。
+
+## Related
+
+- [my-atelier-vault](https://github.com/YUzushio/my-atelier-vault)（[fork](https://github.com/YUzushio/my-atelier-vault/fork)）— Obsidian Wiki テンプレ（任意）
+- [gallery-vault-sender](https://github.com/YUzushio/my-atelier-vault/blob/main/.cursor/skills/gallery-vault-sender/SKILL.md) — Vault 送信側
