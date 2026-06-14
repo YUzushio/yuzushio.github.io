@@ -14,15 +14,47 @@ A **React SPA portfolio** for open content, creative work, and achievements.
 
 ### 1. Set up the repository
 
+GitHub Pages has **User Pages** and **Project Pages**. This template targets **User Pages** (`https://{username}.github.io/`).
+
+| Mode | Example URL | Repository name |
+|------|-------------|-----------------|
+| **User Pages (recommended)** | `https://your-name.github.io/` | **`your-name.github.io`** (must match your username) |
+| **Project Pages** | `https://your-name.github.io/gallery/` | Any name (e.g. `gallery`) · requires changing `base` in `vite.config.ts` |
+
+> **Important:** After you [fork](https://github.com/YUzushio/yuzushio.github.io/fork), the repo is still named `your-name/yuzushio.github.io`.  
+> To publish at **`https://your-name.github.io/`**, you must **rename the repository to `your-name.github.io`** (or create a repo with that name from the start).
+
 **A. Fork (recommended)**
 
 1. [Fork on GitHub](https://github.com/YUzushio/yuzushio.github.io/fork) — [YUzushio/yuzushio.github.io](https://github.com/YUzushio/yuzushio.github.io)
-2. Clone and create a working branch
+2. On your fork: **Settings → General → Repository name** → rename to **`{your-github-username}.github.io`**  
+   (e.g. user `tanaka` → repo `tanaka.github.io`)
+3. Clone (`<your-account>` = your GitHub username):
+
+```bash
+git clone https://github.com/<your-account>/<your-account>.github.io.git
+cd <your-account>.github.io
+```
+
+4. Create a working branch and edit
 
 **B. Use as a template only**
 
-1. Clone this repository
-2. `git remote set-url origin` to your GitHub Pages repo
+1. Create an **empty** GitHub repo named **`{username}.github.io`** (skip “Add README”)
+2. Clone the template and point `origin` at your repo:
+
+```bash
+git clone https://github.com/YUzushio/yuzushio.github.io.git gallery-template
+cd gallery-template
+git remote set-url origin https://github.com/<your-account>/<your-account>.github.io.git
+git push -u origin main
+```
+
+**C. Publish as Project Pages (optional)**
+
+- Any repo name is fine (keeping the fork name `yuzushio.github.io` works)
+- Change `vite.config.ts` `base: '/'` to `base: '/{repo-name}/'`
+- Set `gallery.json` `meta.siteUrl` to `https://{user}.github.io/{repo-name}/`
 
 ### 2. Customize site metadata
 
@@ -90,12 +122,17 @@ Check Feed / Drill / Timeline / Category in the browser.
 
 ### 6. Publish (GitHub Pages)
 
-1. Push to `main` (or your Pages branch)
-2. Repo **Settings → Pages → Build and deployment → GitHub Actions**
-3. When the `build` Action succeeds, the site is live at `meta.siteUrl`
+1. Push to `main`
+2. Enable **Settings → Pages → Build and deployment → GitHub Actions**
+3. When the `build` Action succeeds, the site is live
 
-For User Pages (`<user>.github.io` repo), keep `base: '/'` in `vite.config.ts`.  
-For Project Pages (`/repo-name/`), change to `base: '/repo-name/'`.
+**User Pages** (if you renamed the repo to `{username}.github.io` in §1):
+
+- Live URL: `https://{username}.github.io/`
+- Keep `base: '/'` in `vite.config.ts`
+- Match `gallery.json` `meta.siteUrl` to the same URL
+
+For **Project Pages**, see §1 C (`base` and `siteUrl` must include `/repo-name/`).
 
 ### Typical layout
 
@@ -200,12 +237,8 @@ npm run preview
 
 ## Deploy (GitHub Pages)
 
-Example: run `YUzushio/yuzushio.github.io` as User Pages:
-
-1. Create a `your-name.github.io` repository on GitHub
-2. `git remote set-url origin https://github.com/YOUR_USER/your-name.github.io.git`
-3. Push to `main` → GitHub Actions deploys to Pages
-4. Enable **Settings → Pages → GitHub Actions**
+If you set the repository name to `{username}.github.io` in §1, follow §6 to publish as User Pages.  
+On first deploy, enable **Settings → Pages → GitHub Actions**.
 
 ---
 
