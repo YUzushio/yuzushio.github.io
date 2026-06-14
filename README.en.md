@@ -35,6 +35,25 @@ Fork → rename → edit `gallery.json` → push — that’s enough to launch y
 
 ## Getting started
 
+### Recommended: `@gallery-setup` (fork → publish)
+
+After clone, open **this folder (the cloned folder)** in **Cursor / VS Code / Claude Code**:
+
+| Editor | Action |
+|--------|--------|
+| **Cursor / Claude Code** | Type `@gallery-setup` and follow the prompts |
+| **VS Code + Copilot** | Reference [`.cursor/skills/gallery-setup/SKILL.md`](.cursor/skills/gallery-setup/SKILL.md) in Chat |
+
+**Run the script directly:**
+
+```bash
+node .cursor/skills/gallery-setup/scripts/setup.mjs
+```
+
+Guides you through `gallery.json` meta · User Pages repo-name check · build · GitHub Pages deploy.
+
+Sections §1 onward are **manual details** (skip §2 if you already ran the Skill).
+
 ### 1. Set up the repository
 
 GitHub Pages has **User Pages** and **Project Pages**. This template targets **User Pages** (`https://{username}.github.io/`).
@@ -79,16 +98,9 @@ git push -u origin main
 - Change `vite.config.ts` `base: '/'` to `base: '/{repo-name}/'`
 - Set `gallery.json` `meta.siteUrl` to `https://{user}.github.io/{repo-name}/`
 
-**After clone (A or B):** run `@gallery-setup` or `node .cursor/skills/gallery-setup/scripts/setup.mjs` for meta, build, and deploy steps.
-
 ### 2. Customize site metadata
 
-Edit `meta` in [`public/data/gallery.json`](public/data/gallery.json).  
-**After a fork, use `@gallery-setup` (recommended)** or:
-
-```bash
-node .cursor/skills/gallery-setup/scripts/setup.mjs
-```
+**Skip if you ran [`@gallery-setup`](#recommended-gallery-setup-fork--publish).** To edit manually, change `meta` in [`public/data/gallery.json`](public/data/gallery.json):
 
 ```json
 {
