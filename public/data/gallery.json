@@ -437,6 +437,25 @@
       ]
     },
     {
+      "id": "ai-music-series",
+      "slug": "ai-music-series",
+      "title": "AI協働オリジナル曲シリーズ",
+      "summary": "脳内で温めていた曲を AI ツールと協働して形にする Open 連作プロジェクト。YouTube（MV / Shorts）と note（制作記）で公開。",
+      "kind": "work",
+      "category": "project",
+      "genres": [
+        "music",
+        "sns"
+      ],
+      "year": 2026,
+      "tags": [
+        "オリジナル曲",
+        "MV",
+        "AI制作",
+        "note"
+      ]
+    },
+    {
       "id": "original-mv-sabishii",
       "slug": "original-mv-sabishii",
       "title": "やっぱりなんだかちょっと寂しいな",
@@ -450,10 +469,55 @@
       "year": 2026,
       "publishedAt": "2026-06-10",
       "youtube": "https://www.youtube.com/watch?v=ONlfgk544VE",
-      "parentId": "yuzshio-youtube",
+      "parentId": "ai-music-series",
       "tags": [
         "オリジナル曲",
         "MV",
+        "AI制作"
+      ]
+    },
+    {
+      "id": "ai-music-short-20260615",
+      "slug": "ai-music-short-20260615",
+      "title": "AI協働オリジナル曲シリーズ Short",
+      "summary": "連作告知・制作過程の YouTube Shorts（2026-06-15）。",
+      "kind": "work",
+      "category": "sns",
+      "genres": [
+        "music",
+        "sns"
+      ],
+      "year": 2026,
+      "publishedAt": "2026-06-15",
+      "youtube": "https://www.youtube.com/shorts/b13nUXbcKX4",
+      "parentId": "ai-music-series",
+      "tags": [
+        "YouTube Shorts",
+        "オリジナル曲",
+        "AI制作"
+      ]
+    },
+    {
+      "id": "note-ai-music-series-making-of",
+      "slug": "note-ai-music-series-making-of",
+      "title": "世の中AIで狙った通りの音楽を作れるようになったので作った(HowTo説明)",
+      "summary": "Suno AI で思い通りの曲を作るまでの制作過程を綴った note 制作記。Gemini とのコード添削から Short 完成まで。",
+      "kind": "work",
+      "category": "sns",
+      "genres": [
+        "music",
+        "sns"
+      ],
+      "year": 2026,
+      "publishedAt": "2026-06-15",
+      "url": "https://note.com/yuzusio/n/nf3490b0db62c",
+      "parentId": "ai-music-series",
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-note.jpg",
+      "tags": [
+        "note",
+        "制作記",
+        "Suno",
+        "Gemini",
         "AI制作"
       ]
     },
