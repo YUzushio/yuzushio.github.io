@@ -204,6 +204,29 @@
       "thumbnail": "/assets/thumbnails/sns/yuzshio-vroidhub.png"
     },
     {
+      "id": "vroid-tenshi-short-hair",
+      "slug": "vroid-tenshi-short-hair",
+      "title": "短髪天子",
+      "summary": "Craftpia 向けに調整した比那名居天子（短髪アレンジ）の VRM モデル。VRoid Hub 公開（2020）。",
+      "kind": "work",
+      "category": "sns",
+      "genres": [
+        "illust",
+        "sns"
+      ],
+      "year": 2020,
+      "publishedAt": "2020-10-01",
+      "url": "https://hub.vroid.com/characters/6218163574257527311/models/290867584957661592",
+      "parentId": "yuzshio-vroidhub",
+      "thumbnail": "/assets/thumbnails/vroid/tenshi-short-hair.png",
+      "tags": [
+        "VRoid",
+        "VRM",
+        "3D",
+        "東方Project"
+      ]
+    },
+    {
       "id": "yuzshio-soundcloud",
       "slug": "yuzshio-soundcloud",
       "title": "YUzushio SoundCloud",
@@ -375,6 +398,42 @@
       "thumbnail": "/assets/thumbnails/sns/yuzshio-note.jpg"
     },
     {
+      "id": "yuzshio-qiita",
+      "slug": "yuzshio-qiita",
+      "title": "YUzushio Qiita",
+      "summary": "技術記事・開発ログの Open 公開チャネル。@egaruk",
+      "kind": "hub",
+      "category": "sns",
+      "genres": [
+        "sns"
+      ],
+      "url": "https://qiita.com/egaruk",
+      "showInFeed": false,
+      "tags": [
+        "SNS",
+        "Qiita"
+      ],
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-qiita.png"
+    },
+    {
+      "id": "yuzshio-zenn",
+      "slug": "yuzshio-zenn",
+      "title": "YUzushio Zenn",
+      "summary": "技術記事・開発ログの Open 公開チャネル。@yuzushio1229",
+      "kind": "hub",
+      "category": "sns",
+      "genres": [
+        "sns"
+      ],
+      "url": "https://zenn.dev/yuzushio1229",
+      "showInFeed": false,
+      "tags": [
+        "SNS",
+        "Zenn"
+      ],
+      "thumbnail": "/assets/thumbnails/sns/yuzshio-zenn.jpg"
+    },
+    {
       "id": "touhou-hisouten-guitar-play",
       "slug": "touhou-hisouten-guitar-play",
       "title": "東方緋想天 ソロギター演奏",
@@ -437,25 +496,6 @@
       ]
     },
     {
-      "id": "ai-music-series",
-      "slug": "ai-music-series",
-      "title": "AI協働オリジナル曲シリーズ",
-      "summary": "脳内で温めていた曲を AI ツールと協働して形にする Open 連作プロジェクト。YouTube（MV / Shorts）と note（制作記）で公開。",
-      "kind": "work",
-      "category": "project",
-      "genres": [
-        "music",
-        "sns"
-      ],
-      "year": 2026,
-      "tags": [
-        "オリジナル曲",
-        "MV",
-        "AI制作",
-        "note"
-      ]
-    },
-    {
       "id": "original-mv-sabishii",
       "slug": "original-mv-sabishii",
       "title": "やっぱりなんだかちょっと寂しいな",
@@ -469,7 +509,7 @@
       "year": 2026,
       "publishedAt": "2026-06-10",
       "youtube": "https://www.youtube.com/watch?v=ONlfgk544VE",
-      "parentId": "ai-music-series",
+      "parentId": "yuzshio-youtube",
       "tags": [
         "オリジナル曲",
         "MV",
@@ -490,7 +530,7 @@
       "year": 2026,
       "publishedAt": "2026-06-15",
       "youtube": "https://www.youtube.com/shorts/b13nUXbcKX4",
-      "parentId": "ai-music-series",
+      "parentId": "yuzshio-youtube",
       "tags": [
         "YouTube Shorts",
         "オリジナル曲",
@@ -511,7 +551,7 @@
       "year": 2026,
       "publishedAt": "2026-06-15",
       "url": "https://note.com/yuzusio/n/nf3490b0db62c",
-      "parentId": "ai-music-series",
+      "parentId": "yuzshio-note",
       "thumbnail": "/assets/thumbnails/sns/yuzshio-note.jpg",
       "tags": [
         "note",

@@ -63,6 +63,28 @@ function isSoundCloudTrackUrl(url) {
   }
 }
 
+function isQiitaProfileUrl(url) {
+  try {
+    const { hostname, pathname } = new URL(url)
+    if (!/(?:^|\.)qiita\.com$/i.test(hostname)) return false
+    const parts = pathname.split('/').filter(Boolean)
+    return parts.length === 1
+  } catch {
+    return false
+  }
+}
+
+function isZennProfileUrl(url) {
+  try {
+    const { hostname, pathname } = new URL(url)
+    if (hostname !== 'zenn.dev') return false
+    const parts = pathname.split('/').filter(Boolean)
+    return parts.length === 1
+  } catch {
+    return false
+  }
+}
+
 function findParentThumbnail(gallery, item) {
   if (!item.parentId) return null
   const parent = gallery.items.find((entry) => entry.id === item.parentId)
@@ -200,6 +222,12 @@ async function resolveAvatarUrl(url) {
     return fetchOgImage(url)
   }
   if (NOTE_PROFILE_RE.test(url)) {
+    return fetchOgImage(url)
+  }
+  if (isQiitaProfileUrl(url)) {
+    return fetchOgImage(url)
+  }
+  if (isZennProfileUrl(url)) {
     return fetchOgImage(url)
   }
   if (VROID_USER_RE.test(url)) {
